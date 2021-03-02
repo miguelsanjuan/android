@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_login"
+    tools:context=".ui.user.LoginActivity">
+
+
+    <EditText
+        android:id="@+id/resUserName"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_profile_user"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/resLastName"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_profile_user"
+        android:ems="10"
+        android:hint="Apellidos"
+        android:inputType="textPersonName"
+        android:layout_marginTop="100dp"
+        android:layout_alignLeft="@+id/resUserName"
+        android:layout_alignStart="@+id/resUserName" />
+
+    <EditText
+        android:id="@+id/resCell"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_cell_phone"
+        android:ems="10"
+        android:hint="Celular"
+        android:inputType="number"
+        android:layout_marginTop="160dp"
+        android:layout_alignLeft="@+id/resLastName"
+        android:layout_alignStart="@+id/resLastName" />
+
+    <EditText
+        android:id="@+id/resEmail"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_email"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="textWebEmailAddress"
+        android:layout_marginTop="220dp"
+        android:layout_alignLeft="@+id/resCell"
+        android:layout_alignStart="@+id/resCell" />
+
+    <EditText
+        android:id="@+id/resPass"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_lock"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:layout_marginTop="280dp"
+        android:layout_alignLeft="@+id/resEmail"
+        android:layout_alignStart="@+id/resEmail" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/resBtnCard"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:cardBackgroundColor="@color/blue_700"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_alignTop="@+id/resPass"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/resBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Registrarse"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/resLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="70dp"
+        android:layout_alignTop="@+id/resBtnCard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp" />
+
+
+
+
+
+
+</RelativeLayout>

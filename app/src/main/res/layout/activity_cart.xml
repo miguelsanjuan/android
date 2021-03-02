@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/smoke"
+tools:context=".ui.CartActivity">
+
+<ListView
+    android:id="@+id/listCart"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:divider="@android:color/transparent"
+    android:dividerHeight="1dp"
+    />
+
+    <Button
+        android:id="@+id/btn_cart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listCart"
+        android:layout_marginTop="5dp"
+        android:text="@string/cart_btn" />
+
+</RelativeLayout>

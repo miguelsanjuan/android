@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="2dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/orderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/blue_40"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+        <TextView
+            android:id="@+id/orderDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderTitle"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed"
+
+            />
+
+        <TextView
+            android:id="@+id/orderStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderDescription"
+            android:layout_marginTop="5dp"
+            android:textSize="15dp"
+            android:textColor="@color/orange_700"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+
+            />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

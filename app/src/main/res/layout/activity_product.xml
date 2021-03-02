@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/white"
+        >
+
+        <TextView
+            android:id="@+id/productNameSingle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/productPictureSingle"
+            android:textSize="25dp"
+            android:textColor="@color/blue_40"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/productPictureSingle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/unitPriceSingle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productPictureSingle"
+            android:layout_marginTop="5dp"
+            android:textSize="25dp"
+            android:textColor="@color/green_40"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+        <TextView
+            android:id="@+id/productDescriptionSingle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/unitPriceSingle"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif-condensed"
+
+            />
+
+        <NumberPicker
+            android:id="@+id/numberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productDescriptionSingle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:id="@+id/btn_single"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numberPicker"
+            android:layout_marginTop="5dp"
+            android:text="@string/product_btn" />
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
